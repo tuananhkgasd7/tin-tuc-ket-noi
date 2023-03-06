@@ -1,0 +1,17 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import classes from './SmallCard.module.css';
+
+const SmallCard = (props) => {
+    const news = props.news;
+    return (
+        <Link className={classes.card} to={props.slug}>
+            <div>
+                <p>{news.title}</p>
+                <img src={news.url} alt="news" width='40%'></img>
+            </div>
+        </Link>
+    )
+}
+
+export default SmallCard;
