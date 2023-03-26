@@ -1,28 +1,19 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Login from "./components/login/Login";
-import Register from "./components/register/Register";
-import Home from "./components/Home/Home";
+import Login from "./components/pages/Login/Login";
+import Register from "./components/pages/Register/Register";
+import Home from "./components/pages/Home/Home";
 
 function App() {
-  const [currentForm, setcurrentForm] = useState('login');
-  const toggleForm = (formName) =>{
-    setcurrentForm(formName);
-  }
   return (
-    // <div className="App">
-    // {
-    //     currentForm === "login" ?<Login onFormSwith= {toggleForm}/>:<Register onFormSwith= {toggleForm}/>
-    // }
-      
-    // </div>
-    <Router classname = "app">
+    <Router className = "app">
         <Routes>
-        <Route path="/" element={<Login/>}/>
+        <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/> 
-        <Route path='/Home' element={<Home/>}/>
+        <Route path='/home' element={<Home/>}/>
         </Routes>
     </Router>
   );

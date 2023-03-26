@@ -4,7 +4,7 @@
   overflow: hidden;
 }
 .background_image {
-  background-image: url('../images/meooo.jpg');
+  background-image: url('../../assets/image/meooo.jpg');
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -21,7 +21,7 @@
 }
 
 .title {
-  color: #ffafcc;
+  color: #a2d2ff;
 }
 
 .actions {
@@ -33,31 +33,30 @@
 }
 
 .actions .button {
-  background-color: #ffafcc;
+  background-color: #a2d2ff;
   padding: 15px 20px;
   border-radius: 10px;
   color: white;
   font-weight: bold;
   font-size: 14px;
-  margin: 0;
+  margin-left: auto;
   border: none;
 }
 .actions .button:hover {
-  background-color: #ffc8dd;
+  background-color: #bde0fe;
 }
 
-.actions .button_login {
-  background-color: #a2d2ff;
+.actions .button_regis {
+  background-color: #ffafcc;
   font-size: 14px;
   padding: 15px 20px;
   border-radius: 10px;
   color: white;
   font-weight: bold;
   text-decoration: none;
-  margin-left: auto;
 }
-.actions .button_login:hover {
-  background-color: #bde0fe;
+.actions .button_regis:hover {
+  background-color: #ffc8dd;
 }
 
 .control {
@@ -69,13 +68,13 @@
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #ffafcc;
+  color: #a2d2ff;
   text-align: left;
 }
 
 .control input {
   width: 92%;
-  background-color: #f1e1fc;
+  background-color: #a2d2ff;
   color: #38015c;
   border-radius: 4px;
   border: 1px solid white;
